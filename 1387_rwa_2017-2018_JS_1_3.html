@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> Treci Zadatak </title>
+	</head>
+
+
+	<body>
+
+	<script> 
+		var x = prompt ("Unesite broj");
+
+		function Faktorijel (x) {
+			if (x==0 || x==1)
+				return 1;
+
+			else 
+				return x*Faktorijel(x-1);
+
+		}
+		for (i=1; i<=x; i++) {
+		document.writeln(i+"!="+Faktorijel(i));
+		document.writeln("<br>");
+		}
+	
+	</script>
+
+	</body>
+
+</html>
